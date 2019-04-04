@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+
+    <RelativeLayout
+        android:id="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <EditText
+            android:id="@+id/searchWord"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:hint="Product Name ..... "
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:padding="9dp"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:padding="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/searchWord"
+            android:text="Search" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/relative4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rec_search"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
